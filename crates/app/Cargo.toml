@@ -1,0 +1,19 @@
+[package]
+name = "photo_copy_app"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "photo-copy-app"
+path = "src/main.rs"
+
+[dependencies]
+chrono = { version = "0.4.45", default-features = false, features = ["std"] }
+eframe = { version = "0.37.0", features = ["persistence"] }
+egui_extras = { version = "0.37.0", default-features = false }
+photo_copy_core = { path = "../core" }
+rfd = "0.17.2"
+
+[dev-dependencies]
+image = { version = "0.25.10", default-features = false, features = ["png"] }
+tempfile = "3"

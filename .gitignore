@@ -1,0 +1,13 @@
+# Build output
+/target
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data the app creates inside photo folders (e.g. when testing on the demo folder)
+.photo_index.json
+.photo_index.json.tmp
+.trash/
